@@ -1,0 +1,3 @@
+lean4lean found a problem in R:
+failed to read file './R.olean', incompatible header (exit 1)
+PASS: bundled lean4lean rejects own toolchain's olean (#16679 repro)
