@@ -1,0 +1,12 @@
+./verify.sh: line 9: 1540261 Segmentation fault         (core dumped) LEAN_PATH=. $ELAN run "$tc" lean consumer.lean > /dev/null 2>&1
+./verify.sh: line 11: 1540276 Segmentation fault         (core dumped) LEAN_PATH=. "$LC" Lib > /dev/null 2>&1
+PASS lean leanprover/lean4:v4.36.0: exit 139 (SIGSEGV)
+PASS leanchecker leanprover/lean4:v4.36.0: exit 139 (SIGSEGV)
+./verify.sh: line 9: 1540416 Segmentation fault         (core dumped) LEAN_PATH=. $ELAN run "$tc" lean consumer.lean > /dev/null 2>&1
+./verify.sh: line 11: 1540431 Segmentation fault         (core dumped) LEAN_PATH=. "$LC" Lib > /dev/null 2>&1
+PASS lean leanprover/lean4:v4.33.1: exit 139 (SIGSEGV)
+PASS leanchecker leanprover/lean4:v4.33.1: exit 139 (SIGSEGV)
+./verify.sh: line 9: 1540462 Segmentation fault         (core dumped) LEAN_PATH=. $ELAN run "$tc" lean consumer.lean > /dev/null 2>&1
+./verify.sh: line 11: 1540525 Segmentation fault         (core dumped) LEAN_PATH=. "$LC" Lib > /dev/null 2>&1
+PASS lean leanprover/lean4:v4.37.0-rc1: exit 139 (SIGSEGV)
+PASS leanchecker leanprover/lean4:v4.37.0-rc1: exit 139 (SIGSEGV)
