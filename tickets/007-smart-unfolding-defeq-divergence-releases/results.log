@@ -1,0 +1,2 @@
+PASS leanprover/lean4:v4.36.0: elab accepts rfl / kernel rejects (divergence)
+PASS leanprover/lean4:v4.37.0-rc1: elab accepts rfl / kernel rejects (divergence)
