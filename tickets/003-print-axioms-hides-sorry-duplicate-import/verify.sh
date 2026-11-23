@@ -2,7 +2,7 @@
 # After importing Good then Bad (duplicate theorem names), #print foo shows body `sorry`
 # while #print axioms foo claims NO axioms. exit 0 = reproducible.
 set -u; ELAN="$HOME/.elan/bin/elan"; export PATH="$HOME/.elan/bin:$PATH"; cd "$(dirname "$0")"; fail=0
-tc=leanprover/lean4:v4.36.0; d=$(mktemp -d); cp Good.lean Bad.lean GoodFirst.lean "$d"/
+tc="${AUDIT_TC:-leanprover/lean4:v4.36.0}"; d=$(mktemp -d); cp Good.lean Bad.lean GoodFirst.lean "$d"/
 (cd "$d" && $ELAN run "$tc" lean -o Good.olean Good.lean && $ELAN run "$tc" lean -o Bad.olean Bad.lean) >/dev/null 2>&1
 out=$(cd "$d" && LEAN_PATH=. $ELAN run "$tc" lean GoodFirst.lean 2>&1); ec=$?
 echo "$out"

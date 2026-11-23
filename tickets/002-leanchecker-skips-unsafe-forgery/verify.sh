@@ -2,7 +2,8 @@
 # leanchecker (incl. --fresh) exits 0 on module containing unchecked forged `unsafe` False;
 # the SAFE twin of the same forgery IS rejected (proves the unsafe-replay-skip is the gap).
 set -u; ELAN="$HOME/.elan/bin/elan"; export PATH="$HOME/.elan/bin:$PATH"; cd "$(dirname "$0")"; fail=0
-tc=leanprover/lean4:v4.36.0; LC=$("$ELAN" run "$tc" lean --print-prefix)/bin/leanchecker
+tc="${AUDIT_TC:-leanprover/lean4:v4.36.0}"; LC=$("$ELAN" run "$tc" lean --print-prefix)/bin/leanchecker
+export PATH="$(dirname "$LC"):$PATH"
 d=$(mktemp -d); cp ForgeUnsafe.lean ForgeSafeControl.lean "$d"/
 (cd "$d" && $ELAN run "$tc" lean -o ForgeUnsafe.olean ForgeUnsafe.lean && $ELAN run "$tc" lean -o ForgeSafeControl.olean ForgeSafeControl.lean) >/dev/null 2>&1
 (cd "$d" && LEAN_PATH=. "$LC" ForgeUnsafe >/dev/null 2>&1); a=$?
