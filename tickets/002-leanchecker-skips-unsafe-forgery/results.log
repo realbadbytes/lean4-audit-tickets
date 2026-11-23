@@ -1,0 +1,3 @@
+PASS: leanchecker ForgeUnsafe exit 0 (accepts forged unsafe False)
+PASS: leanchecker --fresh ForgeUnsafe exit 0 (skips isUnsafe replay)
+PASS(control): identical SAFE forgery rejected (exit 1)
