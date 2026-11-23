@@ -1,0 +1,6 @@
+RESULT-16489: ACCEPTED (addDecl succeeded)
+PASS: #16489 accepted on 4.36.0
+RESULT-16649: (kernel) invalid return type for 'case3.I1.mk'
+PASS: #16649 unit-like rule fired on leanprover/lean4:v4.36.0
+RESULT-16649: (kernel) invalid return type for 'case3.I1.mk'
+PASS: #16649 unit-like rule fired on leanprover/lean4:v4.37.0-rc1
