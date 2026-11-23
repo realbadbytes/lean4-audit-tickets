@@ -1,0 +1,6 @@
+@[defeq] theorem foo : 1 + 1 = 2 :=
+sorry
+'foo' does not depend on any axioms
+PASS: kept body is sorry
+PASS: axioms list hides sorryAx
+PASS: exit 0 (no error raised)
