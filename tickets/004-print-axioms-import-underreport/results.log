@@ -1,0 +1,5 @@
+'S9' depends on axioms: [Classical.choice]
+'S9' does not depend on any axioms
+'S9.mk' depends on axioms: [Classical.choice]
+PASS: S9 underreported
+PASS: S9.mk still reports choice (contradiction visible in one run)
