@@ -1,0 +1,4 @@
+PASS(control): authentic forged module rejected (exit 1)
+PASS: sidecar plant -> leanchecker exit 0
+PASS(control): --fresh catches sidecar (exit 1)
+PASS: overwrite defeats --fresh too (exit 0) -- NEW nuance
