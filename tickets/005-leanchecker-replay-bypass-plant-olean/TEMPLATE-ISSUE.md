@@ -1,6 +1,6 @@
 ### Prerequisites
 
-* * [x] Check that your issue is not already filed — extends **#16674**; the whole-file-overwrite `--fresh` bypass (row 4 below) appears new. Prepared as a comment on #16674.
+* [x] Check that your issue is not already filed — extends **#16674**; the whole-file-overwrite `--fresh` bypass (row 4 below) appears new. Prepared as a comment on #16674.
 * [x] Reduce the issue to a minimal, self-contained, reproducible test case. (No Mathlib/Batteries; 1–3 files.)
 * [x] Test against the latest nightly (via elan: 4.38.0-nightly-2026-11-23 — results in Versions/Additional below)
 * [x] Soundness-bug question re `lake check --paranoid`: Assumed affected (shares leanchecker; direct lake plant demo not run — `--paranoid` transcript on the unsafe-forgery issue shows the checker accepting forged content).

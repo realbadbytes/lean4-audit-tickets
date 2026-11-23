@@ -1,6 +1,6 @@
 ### Prerequisites
 
-* * [x] Check that your issue is not already filed — fixed on master via #16682/#16683/#16684 (closed). This reports **release exposure** on 4.36.0/4.37.0-rc1; prepared as a comment on #16682.
+* [x] Check that your issue is not already filed — fixed on master via #16682/#16683/#16684 (closed). This reports **release exposure** on 4.36.0/4.37.0-rc1; prepared as a comment on #16682.
 * [x] Reduce the issue to a minimal, self-contained, reproducible test case. (No Mathlib/Batteries; 1–3 files.)
 * [x] Test against the latest nightly (via elan: 4.38.0-nightly-2026-11-23 — results in Versions/Additional below)
 * [x] Soundness-bug question re `lake check --paranoid`: N/A — elab/kernel disagreement; all bundled checkers share the buggy released code.

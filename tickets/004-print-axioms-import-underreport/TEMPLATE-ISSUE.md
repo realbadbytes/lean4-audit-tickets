@@ -1,6 +1,6 @@
 ### Prerequisites
 
-* * [x] Check that your issue is not already filed — **related to #15226** (same collectAxioms import gap); the S9-vs-S9.mk contradiction within one run appears new. Prepared as a comment on #15226.
+* [x] Check that your issue is not already filed — **related to #15226** (same collectAxioms import gap); the S9-vs-S9.mk contradiction within one run appears new. Prepared as a comment on #15226.
 * [x] Reduce the issue to a minimal, self-contained, reproducible test case. (No Mathlib/Batteries; 1–3 files.)
 * [x] Test against the latest nightly (via elan: 4.38.0-nightly-2026-11-23 — results in Versions/Additional below)
 * [x] Soundness-bug question re `lake check --paranoid`: N/A — reporting layer.

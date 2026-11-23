@@ -1,6 +1,6 @@
 ### Prerequisites
 
-* * [x] Check that your issue is not already filed — **duplicate of #15652**; this text is prepared for posting as a confirmation comment there.
+* [x] Check that your issue is not already filed — **duplicate of #15652**; this text is prepared for posting as a confirmation comment there.
 * [x] Reduce the issue to a minimal, self-contained, reproducible test case. (No Mathlib/Batteries; 1–3 files.)
 * [x] Test against the latest nightly (via elan: 4.38.0-nightly-2026-11-23 — results in Versions/Additional below)
 * [x] Soundness-bug question re `lake check --paranoid`: N/A — reporting layer; kernel would still reject the sorry term.

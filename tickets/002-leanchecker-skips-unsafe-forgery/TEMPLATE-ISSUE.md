@@ -1,6 +1,6 @@
 ### Prerequisites
 
-* * [x] Check that your issue is not already filed — related: #16674 (planted olean replay). The unsafe/skipped-declaration replay-skip angle and the `lake check --paranoid` demonstration below do not appear filed.
+* [x] Check that your issue is not already filed — related: #16674 (planted olean replay). The unsafe/skipped-declaration replay-skip angle and the `lake check --paranoid` demonstration below do not appear filed.
 * [x] Reduce the issue to a minimal, self-contained, reproducible test case. (No Mathlib/Batteries; 1–3 files.)
 * [x] Test against the latest nightly (via elan: 4.38.0-nightly-2026-11-23 — results in Versions/Additional below)
 * [x] Soundness-bug question re `lake check --paranoid`: **Yes — empirically: `lake check --paranoid` exits 0 on the forged module on 4.36.0 and nightly-2026-11-23.**
