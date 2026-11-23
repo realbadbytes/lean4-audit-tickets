@@ -1,3 +1,7 @@
+**NOT A NEW BUG — DO NOT FILE UPSTREAM.** All three kernel input-validation defects are already filed (#16489, #16648, #16649), fixed on master, and — verified with tonight's nightly-2026-11-23 — all three behave correctly there. The only content here is exposure data for released toolchains awaiting the next release cut, i.e. comment material on the closed threads, **not** a bug report.
+
+---
+
 ### Prerequisites
 
 * [x] Check that your issue is not already filed — **#16489 / #16648 / #16649** (closed, fixes unreleased). This reports stable/nightly exposure data; prepared as comments on those issues.

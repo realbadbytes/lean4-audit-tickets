@@ -1,3 +1,8 @@
+**NOT A NEW BUG — DO NOT FILE UPSTREAM.** The elab/kernel divergence is fixed on master (#16682/#16683/#16684, merged 2026-11-22) and verified clean on nightly-2026-11-23 in this very session. What remains is release-timing data only (4.36.0/4.37.0-rc1 lag the fix — standard release cadence, not a defect).
+Use below *only* as an optional :+1:/exposure comment on the closed threads.
+
+---
+
 ### Prerequisites
 
 * [x] Check that your issue is not already filed — fixed on master via #16682/#16683/#16684 (closed). This reports **release exposure** on 4.36.0/4.37.0-rc1; prepared as a comment on #16682.
