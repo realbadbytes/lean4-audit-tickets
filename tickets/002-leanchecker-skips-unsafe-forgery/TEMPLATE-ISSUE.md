@@ -92,6 +92,14 @@ Harness note: `leanchecker` spawns `lean`; put the matching toolchain `bin/` on 
 
 Security-adjacent: coordinated disclosure via security@lean-fro.org intended per this template's guidance.
 
+Direct probe of the dedicated paranoid checker (new evidence, clean-harness):
+```
+$ leanchecker-paranoid ForgeUnsafe           # exit 0  (4.36.0 AND nightly-2026-11-23)
+$ leanchecker-paranoid --fresh ForgeUnsafe   # exit 0  (both)
+$ leanchecker-paranoid ForgeSafeControl      # exit 1: "found a problem ... while replay" (control)
+```
+All bundled checker binaries (`leanchecker`, `leanchecker --fresh`, `leanchecker-paranoid`) and `lake check --paranoid` accept the forged module on both current stable and current nightly.
+
 ### Impact
 
 Teams gating third-party oleans with leanchecker/lake --paranoid get false assurance; a malicious dependency ships `unsafe False` surviving every bundled checker.
